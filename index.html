@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Enigma do Labirinto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="terminal-container">
+        <header class="terminal-header">
+          <!-- Insira este bloco dentro da div "terminal-container", logo abaixo do "terminal-header" -->
+<div class="status-bar-container">
+    <span>VIDA (HP):</span>
+    <div class="barra-vida-fundo">
+        <div id="barra-vida-progresso" class="barra-vida-cheia"></div>
+    </div>
+    <span id="texto-hp">100/100</span>
+</div>
+  
+            <span class="status-indicator">● PROGRESSO SALVO AUTOMATICAMENTE</span>
+            <span class="version">v1.0.0</span>
+        </header>
+
+        <main class="terminal-body">
+            <div id="narrativa" class="texto-narrativa">
+                <!-- O texto da sala será inserido aqui pelo JS -->
+            </div>
+            
+            <div id="opcoes-container" class="opcoes-grid">
+                <!-- Os botões de escolha serão inseridos aqui pelo JS -->
+            </div>
+        </main>
+
+        <footer class="terminal-footer">
+            <button id="btn-reiniciar" class="btn-danger">Reiniciar Jornada (Limpar Cookie)</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

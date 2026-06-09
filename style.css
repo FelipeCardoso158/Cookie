@@ -1,0 +1,146 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0d1117;
+    color: #39ff14; /* Verde neon clássico de terminal */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Principal do Jogo */
+.terminal-container {
+    background-color: #05070a;
+    border: 2px solid #39ff14;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+.terminal-header {
+    background-color: #161b22;
+    padding: 10px 15px;
+    border-bottom: 1px solid #39ff14;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-indicator {
+    color: #39ff14;
+    animation: blink 2s infinite;
+}
+
+/* Corpo do Texto */
+.terminal-body {
+    padding: 25px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-narrativa {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    white-space: pre-line; /* Mantém quebras de linha do JavaScript */
+}
+
+/* Botões de Escolha */
+.opcoes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    background-color: transparent;
+    color: #39ff14;
+    border: 1px solid #39ff14;
+    padding: 12px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #39ff14;
+    color: #05070a;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+}
+
+/* Rodapé e Botão de Reset */
+.terminal-footer {
+    padding: 15px;
+    border-top: 1px dashed #39ff14;
+    text-align: right;
+}
+
+.btn-danger {
+    color: #ff3333;
+    border-color: #ff3333;
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.btn-danger:hover {
+    background-color: #ff3333;
+    color: #05070a;
+    box-shadow: 0 0 10px rgba(255, 51, 51, 0.5);
+}
+
+/* Animação de piscar do painel */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+/* Container da Barra de Vida */
+.status-bar-container {
+    background-color: #161b22;
+    padding: 10px 25px;
+    border-bottom: 1px dashed #39ff14;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.barra-vida-fundo {
+    background-color: #21262d;
+    border: 1px solid #39ff14;
+    flex-grow: 1;
+    height: 14px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.barra-vida-cheia {
+    background-color: #39ff14;
+    width: 100%; /* Será controlado pelo JavaScript */
+    height: 100%;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+/* Mudar a cor se a vida estiver muito baixa */
+.barra-vida-baixa {
+    background-color: #ff3333 !important;
+    animation: blink 1s infinite;
+}
