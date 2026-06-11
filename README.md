@@ -21,3 +21,4 @@ O jogo desafia o usuário a navegar por um labirinto místico tomando decisões 
 1. Baixe os arquivos `index.html`, `style.css` e `script.js` na mesma pasta.
 2. Dê um duplo clique no arquivo `index.html` para abrir em qualquer navegador moderno.
 3. Para testar a persistência: Avance até a **Sala da Água** ou **Sala do Fogo**, feche o navegador, abra-o novamente e veja o seu progresso intacto!
+Felipe de Souza Cardoso 

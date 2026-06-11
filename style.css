@@ -61,7 +61,7 @@ body {
     white-space: pre-line; /* Mantém quebras de linha do JavaScript */
 }
 
-/* Botões de Escolha */
+/* Botões de Escolha pessoal */
 .opcoes-grid {
     display: flex;
     flex-direction: column;
