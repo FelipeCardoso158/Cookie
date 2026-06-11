@@ -170,7 +170,7 @@ const labirinto = {
       "Incrível! Você encontrou a mística Câmara de Ouro. Baús cheios de joias cobrem o chão e uma grande escadaria leva de volta à superfície!",
     opcoes: [
       {
-        texto: "Subir as escadas eaa reivindicar sua vitória! (Fim de Jogo)",
+        texto: "Subir as escadas e reivindicar sua vitória! (Fim de Jogo)",
         destino: "vitoria",
       },
     ],
